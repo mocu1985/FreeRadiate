@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">FreeRadiate</string>
+
+    <string name="food">食</string>
+    <string name="clothing">衣</string>
+    <string name="living">住</string>
+    <string name="transportation">行</string>
+    <string name="education">育</string>
+    <string name="pleasure">樂</string>
+
 </resources>

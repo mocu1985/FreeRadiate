@@ -23,16 +23,59 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.75" />
 
-
-        <!--SkidRightLayoutManager設定長度不能太長，否則會造成卡片變成滿版，沒有層疊效果-->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="@color/colorPrimary"
             app:layout_constraintBottom_toTopOf="@+id/guideline2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+
+        <com.google.android.material.tabs.TabLayout
+            style="@style/CusTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/recycler_view"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/food" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clothing" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/living" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transportation" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/education" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pleasure" />
+
+
+        </com.google.android.material.tabs.TabLayout>
+        <!--SkidRightLayoutManager設定長度不能太長，否則會造成卡片變成滿版，沒有層疊效果-->
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <data>
